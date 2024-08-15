@@ -1,7 +1,7 @@
 import React from 'react'
 import appwriteService from "../appwrite/config"
 import {Link} from 'react-router-dom'
-import {altImg} from '../assets/altImg.gif'
+import  altImg from '../assets/altImg.gif'
 
 function PostCard({$id, title, featuredimage}) {
     
@@ -13,7 +13,7 @@ function PostCard({$id, title, featuredimage}) {
           src={appwriteService.getFilePreview(featuredimage)}
           alt={title}
           onError={(e)=>{
-            e.target.src= {altImg}
+            e.target.src = altImg
           }}
           className="rounded-lg object-cover w-full md:w-[300px] md:h-[250px]"
         />
