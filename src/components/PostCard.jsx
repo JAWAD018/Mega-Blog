@@ -1,6 +1,7 @@
 import React from 'react'
 import appwriteService from "../appwrite/config"
 import {Link} from 'react-router-dom'
+import {img} from '../assets/react.svg'
 
 function PostCard({$id, title, featuredimage}) {
     
@@ -10,7 +11,7 @@ function PostCard({$id, title, featuredimage}) {
       <div className="flex justify-center mb-4">
         <img
           src={appwriteService.getFilePreview(featuredimage)}
-          alt={title}
+          alt={img}
           className="rounded-lg object-cover w-full md:w-[300px] md:h-[250px]"
         />
       </div>
